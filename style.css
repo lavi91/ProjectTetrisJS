@@ -1,0 +1,268 @@
+* {
+	box-sizing: border-box;
+}
+
+.Lavel {
+	position: absolute;
+	width: 250px;
+	left: 125px;
+	top: 250px;
+	transform: translateY(-500px);
+	text-align: center;
+	transition: all 1s;
+	background-color: #47b5e8;
+}
+
+.Levels {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #292221;
+	font-size: 30px;
+	font-weight: brown;
+}
+
+.Levels:hover {
+	color: orange;
+	cursor: pointer;
+}
+
+.Strt:hover {
+	color: orange;
+	cursor: pointer;
+}
+
+.Game {
+	border: solid 3px #292221;
+	display: flex;
+	margin: 0 auto;
+	background-color: #292221;
+	width: 800px;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.Caption {
+	font-size: 50px;
+	font-family: 'Ruslan Display', cursive;
+	color: #47b5e8;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.Panel {
+	display: flex;
+}
+/*Имеет высоту больше, чем видимая часть, т.к. фгуры будут создаваться за пределами видимой части*/
+.Tetris {
+	width: 450x;
+	height: 810px;
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #cccccc;
+}
+
+/*Видимая часть тетриса*/
+.Screen {
+	width: 450px;
+	height: 630px;
+	position: relative;
+	overflow: hidden;
+	flex-wrap: wrap;
+	display: inline-block;
+	margin-right: 0;
+}
+
+.Info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.Result {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #47b5e8;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+
+.Text1 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #47b5e8;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0 0 0 20px;
+}
+
+.Text {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #47b5e8;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-left: 20px;
+}
+
+.Cell {
+	width: 45px;
+	height: 45px;
+}
+
+.FigureI {
+	background-color: #00e5ff;
+	border: solid 1px grey;
+}
+.FigureL {
+	background-color: #ff8e00;
+	border: solid 1px grey;
+}
+.FigureJ {
+	background-color: #ff50bd;
+	border: solid 1px grey;
+}
+.FigureT {
+	background-color: #a00097;
+	border: solid 1px grey;
+}
+.FigureZ {
+	background-color: #69b720;
+	border: solid 1px grey;
+}
+.FigureS {
+	background-color: #f60000;
+	border: solid 1px grey;
+}
+.FigureO {
+	background-color: #faff00;
+	border: solid 1px grey;
+}
+.FigureStop {
+	background-color: black;
+	border: solid 1px grey;
+	transition-duration: 0.5s;	
+}
+
+@media screen and (max-width: 830px) {
+	.Lavel {
+		width: 200px;
+		left: 100px;
+		top: 200px;
+	}
+
+	.Levels {
+		font-size: 24px;
+	}
+
+	.Game {
+		width: 640px;
+	}
+
+	.Caption {
+		font-size: 40px;
+		padding-top: 8px;
+	}
+
+	.Tetris {
+		width: 400px;
+		height: 720px;
+	}
+
+	/*Видимая часть тетриса*/
+	.Screen {
+		width: 400px;
+		height: 560px;
+	}
+
+	.Result {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 12px;
+		margin-left: 16px;
+	}
+
+	.Text1 {
+		font-size: 13px;
+		margin: 0 0 0 16px;
+	}
+
+	.Text {
+		font-size: 24px;
+		margin-bottom: 12px;
+		margin-left: 16px;
+	}
+
+	.Cell {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media screen and (max-width: 675px) {
+.Lavel {
+	width: 125px;
+	left: 63px;
+	top: 125px;
+	transform: translateY(-250px);
+}
+
+.Levels {
+	font-size: 15px;
+}
+
+.Game {
+	border: solid 1px #292221;
+	width: 400px;
+
+}
+
+.Caption {
+	font-size: 25px;
+	padding-top: 5px;
+}
+
+.Panel {
+	display: flex;
+}
+
+.Tetris {
+	width: 250px;
+	height: 450px;
+}
+
+.Screen {
+	width: 250px;
+	height: 350px;
+}
+
+.Info {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.Result {
+	font-size: 15px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+}
+
+.Text1 {
+	font-size: 8px;
+	padding: 0;
+	margin: 0 0 0 10px;
+}
+
+.Text {
+	font-size: 15px;
+	margin-bottom: 8px;
+	margin-left: 10px;
+}
+
+.Cell {
+	width: 25px;
+	height: 25px;
+}
+}
